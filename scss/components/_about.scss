@@ -1,0 +1,54 @@
+.about {
+    padding: 96px 0;
+    padding-right: 16px;
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+
+    }
+
+
+    &___image-wrapper {
+        width: 100%;
+
+        @include tablet {
+            flex-shrink: inherit;
+        }
+
+    }
+
+
+    &__info {
+        max-width: 510px;
+    }
+
+    &__h2 {
+        font-size: 42px;
+        color: $white;
+
+        .about__h2-span {
+            color: $primary-color;
+        }
+    }
+
+    &__p {
+        color: #6B7280;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-bottom: 24px;
+        margin-top: 8px;
+        max-width: 466px;
+
+
+    }
+
+}

@@ -24,6 +24,10 @@
 
         font-size: 42px;
         color: $white;
+        
+        @include mobile {
+            font-size: 32px;
+        }
 
     }
 

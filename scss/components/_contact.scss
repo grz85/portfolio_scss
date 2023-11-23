@@ -1,0 +1,159 @@
+.contact {
+    padding: 96px 0;
+
+    @include mobile {
+        padding: 60px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    &__intro {
+        max-width: 685px;
+    }
+
+    &__h2 {
+
+        font-size: 42px;
+        text-align: center;
+        color: $white;
+        
+        @include mobile {
+            font-size: 32px;
+        }
+
+    }
+
+    &__h2-span {
+        color: $primary-color;
+    }
+
+    &__p {
+        text-align: center;
+        color: #6B7280;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-top: 24px;
+
+
+    }
+
+
+
+    &__form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+            
+        }
+    }
+
+
+    &__forms {
+        display: flex;
+        flex-direction: column;
+        max-width: 540px;
+        width: 100%;
+    }
+
+    &__details {
+        margin-top: 16px;
+        max-width: 348px;
+
+    }
+
+
+    &__detail-value {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 41px;
+
+    }
+
+
+    &__detail-name {
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 41px;
+    }
+
+
+    &__forms {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 540px;
+        margin-top: 56px;
+
+    }
+
+    &__username {
+        background: #1F2937;
+        border: none;
+        color: $white;
+        height: 64px;
+        padding: 12px;
+        font-family: $ff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 41px;
+
+    }
+
+    &__username::placeholder {
+        color: $white;
+        opacity: .7;
+        font-family: $ff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 41px;
+
+    }
+
+    &__text-message {
+        background: #1F2937;
+        border: none;
+        min-height: 164px;
+        padding: 12px;
+        color: $white;
+        margin-top: 32px;
+        resize: none;
+        font-family: $ff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 41px;
+    }
+
+    &__text-message::placeholder {
+        color: $white;
+        opacity: .7;
+        font-family: $ff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 41px;
+
+    }
+
+
+
+    .btn {
+        width: fit-content;
+        margin-top: 24px;
+    }
+
+
+
+
+}

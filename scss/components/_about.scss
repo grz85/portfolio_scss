@@ -37,6 +37,10 @@
         .about__h2-span {
             color: $primary-color;
         }
+        @include mobile {
+            font-size: 32px;
+        }
+       
     }
 
     &__p {

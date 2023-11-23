@@ -30,6 +30,10 @@
 		font-weight: 700;
 		line-height: 64px;
 		margin-bottom: 8px;
+
+		@include mobile {
+            font-size: 32px;
+        }
 	}
 
 	&__role {
